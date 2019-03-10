@@ -473,9 +473,11 @@ ul li:nth-child(8){
 }
 
 .contact-us{
+    margin:0px auto;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     margin-bottom: 150px;
+    max-width: 500px;
 }
 
 .contact-form{
