@@ -10,30 +10,30 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,900" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header sticky">
         <div class="container">
             <nav class="menu_container">
 
             
             <ul class="menu">
-                <li class="menu__item"><a href="#">Home</a></li>
-                <li class="menu__item"><a href="#">About Us</a></li>
-                <li class="menu__item"><a href="#">Team</a></li>
+                <li class="menu__item"><a href="#main">Home</a></li>
+                <li class="menu__item"><a href="#years">About Us</a></li>
+                <li class="menu__item"><a href="#team">Team</a></li>
                 
                 <li class="logo ">
-                   <a href="#"><img src="img/Logo.png" alt="H-Logo"></a> 
+                   <a href="#main"><img src="img/Logo.png" alt="H-Logo"></a> 
                 </li>
 
-                <li class="menu__item "><a href="#">Services</a></li>
-                <li class="menu__item"><a href="#">Blog</a></li>
-                <li class="menu__item"><a href="#">Contact Us</a></li>
+                <li class="menu__item "><a href="#provide">Services</a></li>
+                <li class="menu__item"><a href="#blog">Blog</a></li>
+                <li class="menu__item"><a href="#contact">Contact Us</a></li>
             </ul>
 
         </nav>
         </div>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
         <section class="promo">
             <div class="container">
                 <div class="promo-box">
@@ -50,7 +50,7 @@
             </div>
         </section>
 
-        <section class="years">
+        <section class="years" id="years">
             <div class="container">
                
                 <div class="yers-ladder">
@@ -91,7 +91,7 @@
             <div class="header-team"> </div>
         </section>
 
-        <section class="team">
+        <section class="team" id="team">
             <div class="container">
                 <div class="title-section">
                     <h2>This is our team</h2>
@@ -137,7 +137,7 @@
             <div class="team-footer"></div>
         </section>
 
-        <section class="provide">
+        <section class="provide" id="provide">
             <div class="container">
                 <div class="title-provide">
                     <h2>We provide you everything</h2>
@@ -168,6 +168,7 @@
 
                 
             </div>
+            <span id="blog"></span>
             <div class="btn-box">
                     <button class="btn btn_promo btn_white">VISIT OUR BLOG</button>
                     <div class="provide_footer">
@@ -177,7 +178,7 @@
             
         </section>
 
-        <section class="contact">
+        <section class="contact" id="contact">
             <div class="container">
                 <div class="contact-title">
                     <h2>Contac Us</h2>
@@ -219,6 +220,7 @@
         </div>
     </footer>
 
+<!-- прикрепляем библиотеку jquary -->
 
 </body>
 </html>

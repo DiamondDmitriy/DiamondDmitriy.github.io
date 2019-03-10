@@ -56,13 +56,15 @@ li{
 }
 .menu li:not(:nth-child(4)){
     width: 85px;
+    text-align: center;
 }
 
 .logo{
     width:50px;
     height:54px;
     padding: 0;
-    margin-right: 30px;
+    margin-left: -5px;
+
     
 }
 .menu{
@@ -72,7 +74,6 @@ li{
     font-size: 13px;
 }
 .menu_container{
-
     width:800px;
     margin: 0 auto;
 }
@@ -539,6 +540,15 @@ form .btn_sabmit{
     font-weight: 300;
 }
 
+
+/*  */
+/* прилипающий хедер */
+
+.sticky{
+    position: sticky;
+    top:0;
+    z-index: 2;
+}
 /* адаптация */
 @media (min-width:0px) and (max-width:480px){
     .menu_container{
