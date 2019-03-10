@@ -50,18 +50,20 @@ ul li.menu__item a {
     padding: 10px 5px;
 
 }
-.logo{
-    height:54px;
-    padding: 0;
-    margin-right: -5px;
-    
-}
 
-ul li{
-    
+li{
     list-style: none;
 }
+.menu li{
+    width: 85px;
+}
 
+.logo{
+    width:50px;
+    height:54px;
+    padding: 0;
+    
+}
 .menu{
     display:flex;
     justify-content: space-around;
@@ -426,17 +428,33 @@ ul li:nth-child(8){
    
 }
 .contact-title{
+    
     padding-top:100px;
     display: block;
     text-align: center;
     margin-bottom: 55px;
 }
 
+
+.contact-title h2{
+    font-size: 34px;
+    font-weight: 300;
+}
+.contact-title p{
+    color:#777;
+    font-size: 16px;
+    font-weight: 300;
+}
+
 .item__contact{
     text-align: center;
     width:150px;
 }
-
+.contact-us p{
+    font-size: 12px;
+    font-weight: 300;
+    columns: #777777;
+}
 
 .contact-us li div{
     display: inline-block;
