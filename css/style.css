@@ -54,7 +54,7 @@ ul li.menu__item a {
 li{
     list-style: none;
 }
-.menu li{
+.menu li:not(:nth-child(4)){
     width: 85px;
 }
 
@@ -62,6 +62,7 @@ li{
     width:50px;
     height:54px;
     padding: 0;
+    margin-right: 30px;
     
 }
 .menu{
