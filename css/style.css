@@ -36,7 +36,7 @@ body{
 .logo:hover{
     
     box-shadow: 0px 0px 10px 1px black;
-    transition-duration: 1s; 
+    transition-duration: 0.2s; 
     transform: scale(1.05);   
     
 }
@@ -51,7 +51,7 @@ ul li.menu__item a {
     background-color: #121212;
     color:#fff;
     transform: scale(1.1);
-    transition-duration: 1s;
+    transition-duration: 0.2s;
     padding: 10px 5px;
 
 }
@@ -122,7 +122,7 @@ li{
 .btn:hover{
     box-shadow: 0px 0px 15px 1px black;
     transition-property: box-shadow;
-    transition-duration: 1s;
+    transition-duration: 0.2s;
     background-color: #777;  
 }
 
@@ -229,14 +229,15 @@ ul li:nth-child(8){
     border-radius: 50%;
     width: 5px;
     height:5px;
-    right:49.5%;
+    right:50%;
     background-color:#181818;
+    transform: translateX(+50%);
 }
 
 .ladder li:nth-child(5)::before{
     width: 20px;
     height:20px;
-    left:49%;
+    left:50%%;
 }
 
 
