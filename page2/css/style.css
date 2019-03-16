@@ -220,7 +220,8 @@ header{
 
 
 .service{
-    /* background-color: #2ebaee; */
+    background: rgb(46,186,238);
+    background: linear-gradient(145deg, rgba(255,255,255,1) 55%, rgba(46,186,238,1) 55%);
     
 }
 
@@ -247,7 +248,7 @@ header{
     border-top:1px solid #e7e7e7;
     
     list-style: none;
-    margin:0px;
+    margin:0px auto;
     padding: 0px;
     padding-top:55px;
 
@@ -258,8 +259,28 @@ header{
 
 }
 
+.serv__item:nth-child(1){
+    grid-area: item1;
+}
+
+.serv__item:nth-child(2){
+    grid-area: item2;
+
+}
+
+.serv__item:nth-child(3){
+    grid-area: item3;
+
+}
+
+.serv__item:nth-child(4){
+    grid-area: item4;
+
+}
+
+
 .serv__item{
-    width:210px;
+    width:100%;
 }
 
 .serv__item img{
@@ -337,27 +358,42 @@ header{
 /* loren-ipsum */
 
 .loren-ipsum{
+    margin-top:100px;
     display: grid;
     grid-template-areas: "block1 block2";
-    grid-template-columns: 4fr 3fr;
+    grid-template-columns: 3fr 3fr;
 
     grid-template-rows: 340px;
+    padding-bottom: 60px;
+    
 }
 
 .loren-ipsum .block-serv{
-
+    width: 80%;
+    display: block;
+    margin:auto 0px;
 }
 
 .loren-ipsum .block-serv p{
-
+    color:#878787;
+    line-height: 20px;
+    font-size: 14px;
+    margin:30px 0px;
 }
 
 .loren-ipsum .block-serv h3{
+    font-size: 25px;
 
 }
 
 .loren-ipsum .img-serv{
     background:url('../img/Intuos-Pro.png') no-repeat;
-    background-position: center center;
-    background-size: 100%;
+    background-position: left center;
+    background-size: 80%;
+}
+
+
+.btn_invers{
+    color:#2ebaee;
+    background-color: #FFF;
 }
