@@ -1,10 +1,17 @@
 
+ul{
+    list-style-type: none;
+    margin:0px;
+    padding: 0px;
+}
+
 body,html{
     font-family: 'Montserrat', sans-serif;
     
 }
 
 header .menu{
+    z-index: 999;
     width:100%;
     position: fixed;
     padding:35px 0px;
@@ -87,7 +94,8 @@ header .menu{
 }
 
 
-.menu__links-item:hover,.menu__links-item:focus {
+.menu__links-item:hover,.menu__links-item:focus,
+.menu__item a:hover,.menu__item a:focus {
     text-decoration: underline;
     color:#2ebaee;
 }
@@ -441,6 +449,11 @@ footer .menu-list{
     font-weight: bold;
 }
 
+footer .menu-list a{
+    color:white;
+    text-decoration: none;
+}
+
 footer .menu-list .menu__item{
 
 }
@@ -448,3 +461,102 @@ footer .menu-list .menu__item{
 .copyright{
     margin-right: 30px;
 }
+
+
+
+/* serv-slider */
+
+
+.serv-slider{
+    margin:0px;
+    padding: 0px;
+}
+
+.post{
+    display: flex;
+    flex-direction: column;
+}
+
+.post-img{
+    width: 45%;
+    height:515px;
+    background:url('../img/28.png') 50% 50% no-repeat;
+}
+
+.post-slid__item{
+    display: flex;
+}
+
+
+
+.post-info{
+    margin:auto 0px;
+    width: 404px;
+    margin-left: 60px;
+}
+
+.post-info h3{
+    font-size: 55px;
+}
+
+.post-info p{
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+
+
+.post-list{
+    display: flex;
+}
+
+.post__item{
+    height:300px;
+    width:25%;
+    position: relative;
+}
+
+.post__item{
+    display: flex;
+    border:1px solid red;
+}
+.post__item:nth-child(1){
+    background: url('../img/Lorem-ipsum.png') 50% 50% no-repeat;
+    background-size: 100% 100%;
+}
+
+.post__item:nth-child(2){
+    background: url('../img/Nulla-pulvinar.png') 50% 50% no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.post__item:nth-child(3){
+    background: url('../img/Nunc-fringilla.png') 50% 50% no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.post__item:nth-child(4){
+    background: url('../img/Fusce-at.png') 50% 50% no-repeat;
+    background-size: 100% 100%;
+
+}
+
+
+
+
+.post__item p{
+    font-size: 35px;
+    font-weight: bold;
+    color:#FFF;
+    position: absolute;
+    padding: 0px 40px;
+    top:50%;
+    transform: translateY(-100%);
+}
+
+
+/* ховер post__item */
+.post__item{}
+
+/*  */
