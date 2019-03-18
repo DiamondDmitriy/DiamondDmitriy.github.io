@@ -4,9 +4,9 @@ body,html{
     
 }
 
-.menu{
-    z-index: 999;
-    /* position: fixed; */
+header .menu{
+    width:100%;
+    position: fixed;
     padding:35px 0px;
     display: flex;
     background-color: rgba(0, 0, 0, 0.4);
@@ -212,6 +212,7 @@ header{
     font-size: 18px;
     width:200px;
     padding: 15px 0px;
+    
 }
 
 
@@ -221,7 +222,7 @@ header{
 
 .service{
     background: rgb(46,186,238);
-    background: linear-gradient(145deg, rgba(255,255,255,1) 55%, rgba(46,186,238,1) 55%);
+    background: linear-gradient(160deg, rgba(255,255,255,1) 50%, rgba(46,186,238,1) 50%);
     
 }
 
@@ -308,9 +309,9 @@ header{
 
 /* hover */
 .btn_hov:hover{
-    color:#2ebaee;
-    background-color: #FFF;
-    border:1px solid #2ebaee;
+    
+
+
 }
 
 /*  */
@@ -398,6 +399,52 @@ header{
     background-color: #FFF;
 }
 
+/* ser slider */
+.serv-slider{
+    background-color: #ffffff;
+}
 
 
-/*  */
+
+
+/*footer*/
+footer{
+    
+    background-color: black;
+    color:white;
+    margin: 0px;
+    
+
+
+}
+
+footer .container{
+    display:flex;
+    justify-content: space-between;
+    padding:30px 0px;
+
+}
+
+footer .menu{
+    margin:auto 0px;
+    margin-left: 30px;
+}
+
+footer .menu-list{
+    margin:0px;
+    padding:0px;
+    list-style-type: none;
+    display: flex;
+    width:360px; 
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+footer .menu-list .menu__item{
+
+}
+
+.copyright{
+    margin-right: 30px;
+}
