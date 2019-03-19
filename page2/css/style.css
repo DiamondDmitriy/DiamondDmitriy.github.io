@@ -559,4 +559,85 @@ footer .menu-list .menu__item{
 /* ховер post__item */
 .post__item{}
 
-/*  */
+/*  */ 
+
+
+ 
+/* тим */
+.team h2{
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.team h2 span{
+    color:#2ebaee;
+}
+
+.team-list{
+    display:grid;
+    grid-template-areas: "block1 block2 block3 block4";
+    grid-template-columns: 1f 1f 1f 1f;
+    grid-template-rows: 314px;
+
+}
+
+.item__persona{
+
+}
+.item__persona .avatar{
+    margin:auto auto;
+    display:block;
+    height: 184px;
+    width:184px;
+    
+    border:1px solid white;
+    border-radius: 50%;
+}
+
+.item__persona:nth-child(1) .avatar{
+    background: #efefef url(../img/Warstwa\ 4.png) 50% 100% no-repeat;
+    background-size: 175px;
+}
+.item__persona:nth-child(2) .avatar{
+    background: #efefef url(../img/Warstwa\ 5.png) 50% 100% no-repeat;
+    background-size: 175px;
+}
+.item__persona:nth-child(3) .avatar{
+    background: #efefef url(../img/Warstwa\ 6.png) 50% 100% no-repeat;
+    background-size: 175px;
+}
+.item__persona:nth-child(4) .avatar{
+    background: #efefef url(../img/Warstwa\ 7.png) 50% 100% no-repeat;
+    background-size: 175px;
+}
+
+.item__persona h3{
+    font-size: 30px;
+    margin:0px;
+    margin-top:20px;
+    margin-bottom:5px;
+    text-align: center;
+
+}
+
+.item__persona p{
+    text-align: center;
+    font-size: 14px;
+    margin:0px;
+    color:#878787;
+    margin-bottom: 10px;
+}
+
+.item__persona a{
+
+}
+
+/* contact-us */
+
+.contact-us{
+    background: url('../img/background-contact.png') center center no-repeat;
+}
+
+.contact-info{
+
+}
