@@ -1,33 +1,31 @@
-// отправка заявки 
+// Отправка заявки 
 $(document).ready(function() {
-    $('#form').submit(function(){ // проверяет на пустоту заполненых полей, Атрибут html5 required не проходит (не поддерживается сафари)
-        if(document.form.name.value == '' || document.email.value == '' ){
-            valid = false;
-            return valid;
-        } 
-        $.ajax({
-            type: "POST",
-            url: "mail.php",
-            data: $(this).serialize()
-        }).done(function(){
-            $('.js-over-thank-you').fadeIN();
-            $(this).find('input').val('');
-            $('#form').trigger('reset');
-        });
-        return false;
-    });
+	$('#form').submit(function() { // проверка на пустоту заполненных полей. Атрибут html5 — required не подходит (не поддерживается Safari)
+		if (document.form.name.value == '' || document.form.email.value == '' ) {
+			valid = false;
+			return valid;
+		}
+		$.ajax({
+			type: "POST",
+			url: "mail.php",
+			data: $(this).serialize()
+		}).done(function() {
+			$('.js-overlay-thank-you').fadeIn();
+			$(this).find('input').val('');
+			$('#form').trigger('reset');
+		});
+		return false;
+	});
 });
 
-// Закрыть попап "спасибо"
-
-$('.js-close-thank-you').click(function(){ //по клику на крестик
-    $('.js-overlay-thank-you').fadeOut();
+// Закрыть попап «спасибо»
+$('.js-close-thank-you').click(function() { // по клику на крестик
+	$('.js-overlay-thank-you').fadeOut();
 });
 
-$(document).mouseup(function (e){// по клику в не попав
-    var popus = $('.popus');
-    if (e.terget!=popus[0]&&popus.has(e.target).lenght === 0){
+$(document).mouseup(function (e) { // по клику вне попапа
+    var popup = $('.popup');
+    if (e.target!=popup[0]&&popup.has(e.target).length === 0){
         $('.js-overlay-thank-you').fadeOut();
     }
 });
-

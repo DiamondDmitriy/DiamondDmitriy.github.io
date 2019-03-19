@@ -506,23 +506,30 @@ footer .menu-list .menu__item{
 
 
 .post-list{
-    /* display: flex; */
+    display: flex;
 }
-
-.post__item{
+.post-list a{
+    border:1px solid red;
     height:300px;
     width:25%;
     position: relative;
 }
 
 .post__item{
-    display: flex;
-    border:1px solid red;
+    
 }
-.post__item:nth-child(1){
+
+.post__item{
+    width: 100%;
+    height:100%;
+    border: 3px solid #2ebaee;
+    
+}
+.post-list:nth-child(1){
     background: url('../img/Lorem-ipsum.png') 50% 50% no-repeat;
     background-size: 100% 100%;
 }
+/* }
 
 .post__item:nth-child(2){
     background: url('../img/Nulla-pulvinar.png') 50% 50% no-repeat;
@@ -540,7 +547,7 @@ footer .menu-list .menu__item{
     background: url('../img/Fusce-at.png') 50% 50% no-repeat;
     background-size: 100% 100%;
 
-}
+} */
 
 
 
@@ -745,59 +752,3 @@ input{
 
 
 
-/* попап */
-
-.overlay {
-	position: absolute;
-	width: 100%;
-	height: 100vh;
-	top: 0;
-	left: 0;
-	background-color: rgba(0, 0, 0, .5);
-	display: none;
-}
-
-.popup {
-	position: absolute;
-	width: 300px;
-	height: 180px;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	padding: 40px;
-	background-color: #FFF;
-}
-
-.close-popup {
-	position: absolute;
-	top: 15px;
-	right: 15px;
-	width: 23px;
-	height: 23px;
-	cursor: pointer;
-}
-
-.close-popup:before {
-	content: '';
-	background-color: #000;
-	position: absolute;
-	height: 1px;
-	width: 31px;
-	top: 11px;
-	left: -4px;
-	transform: rotate(-45deg);
-}
-
-.close-popup:after {
-	content: '';
-	background-color: #000;
-	position: absolute;
-	height: 1px;
-	width: 31px;
-	top: 11px;
-	transform: rotate(45deg);
-	left: -4px;
-}
-
-
-/* ////////////////////////// */
