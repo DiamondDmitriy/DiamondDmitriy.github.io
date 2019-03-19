@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- подкл библиотеку -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="css/style.css">
+    
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700,800,900" rel="stylesheet">
@@ -247,31 +248,33 @@
 
 
         <section class="contact-us ">
+            <div class="container _flex">
+
             <div class="contact-info">
-                <p>Contact with us</p>
-                <p>Marszalkowska Street 14/35 / Mazowieckie, Poland </p>
+                <h2>Contact with us</h2>
+                <p class="p_adres">Marszalkowska Street 14/35 / Mazowieckie, Poland </p>
                 <p>Phone: <span> (+48) 604 234 091</span></p>
                 <p>E-mail: <span> contact@austera.com </span></p>
                 <div class="socials">
                     <ul class="social-list">
                         <li class="social__item">
-                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="img/social/twr.png" alt="twr"></a>
                         </li>
 
                         <li class="social__item">
-                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="img/social/fb.png" alt="fb"></a>
                         </li>
 
                         <li class="social__item">
-                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="img/social/p.png" alt="p"></a>
                         </li>
 
                         <li class="social__item">
-                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="img/social/gl.png" alt="gl"></a>
                         </li>
 
                         <li class="social__item">
-                            <a href="#"><img src="" alt=""></a>
+                            <a href="#"><img src="img/social/ml.png" alt="ml"></a>
                         </li>
 
                     </ul>
@@ -280,13 +283,17 @@
 
             <div class="contact-form">
 
-                <form action="" method="get">
-
+                <form class="form" name="form" id="form">
+                    <input type="text" name="name" id="name">
+                    <input type="email" name="email" id="email">
+                    <textarea name="message" id="message"  rows="5"></textarea>
+                    <button class="btn">send message</button>
                 </form>
 
             </div>
 
-
+                
+        </div>
         </section>
 
 
@@ -315,11 +322,26 @@
         </div>
 
     </div>
-        
+
+
+<!-- попап -->
+    <div class="overlay js-overlay-thank-you">
+        <div class="popup js-thank-you">
+            <h2>Спасибо за заявку</h2>
+            <div class="close-popup js-close-thank-you"></div>
+        </div>
+    </div>
+<!--  -->
+
     </footer>
 
     
     <!-- подкл наш js -->
    <script src="js/menu.js"></script> 
+
+
+   <!-- для отправки данных  -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="mail.js"></script>
 </body>
 </html>

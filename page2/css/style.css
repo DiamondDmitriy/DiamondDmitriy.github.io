@@ -506,7 +506,7 @@ footer .menu-list .menu__item{
 
 
 .post-list{
-    display: flex;
+    /* display: flex; */
 }
 
 .post__item{
@@ -567,10 +567,13 @@ footer .menu-list .menu__item{
 .team h2{
     font-size: 55px;
     font-weight: bold;
+    margin-bottom: 50px;
+    margin-top:80px;
 }
 
 .team h2 span{
     color:#2ebaee;
+    
 }
 
 .team-list{
@@ -632,12 +635,169 @@ footer .menu-list .menu__item{
 
 }
 
+.team{
+    margin-bottom: 50px;
+}
+
 /* contact-us */
 
+._flex{
+    display: flex;
+}
 .contact-us{
+ 
     background: url('../img/background-contact.png') center center no-repeat;
 }
 
 .contact-info{
+    width:460px;
+    color:white;
 
 }
+
+.contact-info h2{
+    padding-top:110px;
+    font-weight: bold;
+    font-size: 55px;
+    margin-bottom: 50px;
+}
+
+.contact-info .p_adres{
+    font-size: 14px;
+    color:#878787;
+    margin:0xp;
+    padding: 0px;
+    margin-bottom:15px;
+}
+
+.contact-info p{
+    margin:0xp;
+    font-size: 22px;
+    color:#878787;
+    padding: 0px;
+    margin-bottom:10px;
+
+
+}
+
+.contact-info span{
+    color:#2ebaee;
+    margin:0xp;
+    padding: 0px;
+}
+
+.social-list{
+    display: flex;
+    padding:40px 0px;
+}
+
+.social__item:not(:nth-child(5)){
+    margin-right: 25px;
+}
+
+/* форма контактов */
+
+.contact-form{
+    display: block;
+    text-align: right;
+    margin-top:110px;
+    width:450px;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+form{
+    width:100%;
+    
+}
+button{
+    border: none;
+    
+}
+
+input{
+    width:100%;
+    background:transparent;
+    border:1px solid #878787;
+    padding:10px 5px;
+    border-radius: 5px;
+    color:#2ebaee;
+    margin-bottom: 10px;
+    
+}
+#message{
+    border-radius: 5px;
+    padding:10px 5px;
+    width:100%;
+    background:transparent;
+    border:1px solid #878787;
+    color:#2ebaee;
+    margin-bottom: 15px;
+    height:140px;
+}
+
+.btn-form{
+
+}
+
+
+
+
+
+
+/* попап */
+
+.overlay {
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	display: none;
+}
+
+.popup {
+	position: absolute;
+	width: 300px;
+	height: 180px;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	padding: 40px;
+	background-color: #FFF;
+}
+
+.close-popup {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 23px;
+	height: 23px;
+	cursor: pointer;
+}
+
+.close-popup:before {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	left: -4px;
+	transform: rotate(-45deg);
+}
+
+.close-popup:after {
+	content: '';
+	background-color: #000;
+	position: absolute;
+	height: 1px;
+	width: 31px;
+	top: 11px;
+	transform: rotate(45deg);
+	left: -4px;
+}
+
+
+/* ////////////////////////// */
