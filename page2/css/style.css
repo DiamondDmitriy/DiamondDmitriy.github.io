@@ -154,8 +154,8 @@ header .menu{
     top: 0;
     right: 0;
     left: 0;
-    margin-top: 105px;
-    background-color: rgba(0, 0, 0, 0.8);
+    margin-top: 104.5px;
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 1000;
     overflow: auto;
   }
@@ -230,13 +230,13 @@ header{
 
 .service{
     background: rgb(46,186,238);
-    background: linear-gradient(160deg, rgba(255,255,255,1) 50%, rgba(46,186,238,1) 50%);
+    background: linear-gradient(160deg, rgba(255,255,255,1) 40%, rgba(46,186,238,1) 40%);
     
 }
 
 .container{
 
-    width:1000px;
+    max-width:1000px;
     margin:0px auto;
 }
 
@@ -254,6 +254,7 @@ header{
 }
 
 .service-list{
+
     border-top:1px solid #e7e7e7;
     
     list-style: none;
@@ -261,12 +262,15 @@ header{
     padding: 0px;
     padding-top:55px;
 
+    /* justify-content: space-between; */
     display: grid;
     grid-template-areas: "item1 item2 item3 item4";
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 40px;
 
 }
+
+
 
 .serv__item:nth-child(1){
     grid-area: item1;
@@ -308,6 +312,7 @@ header{
     color:#878787;
     line-height: 18px;
     font-size: 14px;
+    
     
 }
 
@@ -497,16 +502,20 @@ footer .menu-list .menu__item{
 
 .post-info h3{
     font-size: 55px;
+    margin-bottom: 20px;
+    
 }
 
 .post-info p{
     font-size: 14px;
     margin-bottom: 50px;
+    line-height: 20px;
 }
 
 
 .post-list{
     display: flex;
+    flex-wrap: wrap;
 }
 .post-list a{
     height:300px;
@@ -561,7 +570,7 @@ footer .menu-list .menu__item{
     position: absolute;
     padding: 0px 40px;
     top:50%;
-    transform: translateY(-100%);
+    transform: translateY(-50%);
 }
 
 
@@ -588,13 +597,11 @@ footer .menu-list .menu__item{
 .team-list{
     display:grid;
     grid-template-areas: "block1 block2 block3 block4";
-    grid-template-columns: 1f 1f 1f 1f;
-    grid-template-rows: 314px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 
 }
 
 .item__persona{
-
 }
 .item__persona .avatar{
     margin:auto auto;
@@ -659,7 +666,7 @@ footer .menu-list .menu__item{
 }
 
 .contact-info{
-    width:460px;
+    max-width:460px;
     color:white;
 
 }
@@ -710,7 +717,7 @@ footer .menu-list .menu__item{
     display: block;
     text-align: right;
     margin-top:110px;
-    width:450px;
+    max-width:450px;
     margin-left: auto;
     margin-right: 0px;
 }

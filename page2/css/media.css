@@ -1,5 +1,172 @@
 
 
-.service-list{
+
+@media (max-width:600px) and  (min-width:320px){
+    .service{
+        /* background: rgb(46,186,238);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 60%, rgba(46,186,238,1) 60%);
+         */
+         background:none;
+    }
+
+    .service-list{
+        grid-row-gap: 80px;
+        grid-template-columns:250px 250px;
+        grid-template-areas:"item1"
+                            "item2"
+                            "item3"
+                            "item4"; 
+        
+    }
+
+    .serv__item{
+        text-align: center;
+    }
+    .serv__item img{
+        margin:0px auto;
+    }
+
+
+
+
+}
+/*  */
+@media (min-width:600px) and (max-width:899px){
+    .service{
+        background:none;
+        /* background: rgb(46,186,238);
+        background: linear-gradient(180deg, rgba(255,255,255,1) 50%, rgba(46,186,238,1) 50%);
+         */
+    }
+
+
+    .service-list{
+        grid-row-gap: 20px;
+        justify-content: space-around;
+        grid-template-columns:250px 250px;
+        grid-template-areas:"item1 item2"
+                            "item3 item4"; 
+        
+    }
+
+
+    .serv__item{
+        text-align: center;
+    }
+    .serv__item img{
+        margin:0px auto;
+    }
+
+    .serv-layout {
+        margin-bottom: 50px;
+    }
+
+    .serv-loren-psum .block-serv{
+        padding-left: 20px;
+
+    }
+
+    .loren-ipsum .img-serv{
+        margin-left: 20px;
+    }
+
+
+    .serv-loren-psum{
+        grid-template-columns: 4fr 3fr; 
+    }
+
+    .loren-ipsum {
+        margin-top:0px;
+        grid-template-columns: 3fr 4fr;
+        padding-bottom: 0px;
+    }
+
+
+    .post-info {
+        margin-left: 20px;
+    }
+
+
+    .post-list a{
+        height:300px;
+        width:50%;
+        position: relative;
+    }
+
+    .post__item p{
+        font-size: 35px;
+        font-weight: bold;
+        color:#FFF;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%)
+    }
+
+
+
+    /* team */
+    .team {
+        margin-bottom: 20px;
+    }
+    .team h2{
+        
+        text-align: center;
+    }
+    .team-list{
+        grid-row-gap: 40px;
+        display:grid;
+        grid-template-areas: "block1 block2" 
+                             "block3 block4";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 314px;
+    
+    }
+
+/* contact */
+    .contact-us div._flex{
+        display: block;
+    }
+
+    .contact-info{
+        display: block;
+        margin:0px auto;
+        text-align: center;
+    }
+    .contact-info h2{
+        
+        font-size: 35px;
+        padding:0px;
+        margin:0px;
+    }
+    .socials{
+        margin:0px auto;
+    }
+    .social-list{
+        padding: 0px;
+        
+    }
+    .contact-form {
+        margin:0px auto;
+        margin-top: 0px;
+    }
+
+    input{
+        padding:5px;
+    }
+
+    #message {
+        height:80px;
+    }
+}
+
+
+
+
+@media (min-width:900px)  and (max-width: 1199px)  {
+
+    .contact-form {
+        margin:0px auto;
+        margin-top: 110px;
+    }
 
 }
