@@ -1,4 +1,12 @@
 
+/* кнопка поиска */
+.search__icon:hover, .search__icon:focus{
+    /* text-decoration-line: underline; */
+    
+}
+
+/*  */
+
 ul{
     list-style-type: none;
     margin:0px;
@@ -442,6 +450,7 @@ footer .container{
 footer .menu{
     margin:auto 0px;
     margin-left: 30px;
+    
 }
 
 footer .menu-list{
@@ -449,13 +458,12 @@ footer .menu-list{
     padding:0px;
     list-style-type: none;
     display: flex;
-    max-width:360px; 
-    display: flex;
     justify-content: space-between;
     font-weight: bold;
 }
 
 footer .menu-list a{
+    margin-right: 10px;
     color:white;
     text-decoration: none;
 }
@@ -663,7 +671,7 @@ footer .menu-list .menu__item{
 }
 .contact-us{
  
-    background: url('../img/background-contact.png') center center no-repeat;
+    background: rgba(0, 0, 0, 0.9) url('../img/background-contact.png') center center no-repeat;
 }
 
 .contact-info{

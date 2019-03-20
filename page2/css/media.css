@@ -2,7 +2,16 @@
 
 
 @media (max-width:600px) and  (min-width:320px){
+
+    
+
+    .loren-ipsum {
+        background-color: #2ebaee;
+    }
+   
+    
     .service{
+        
         /* background: rgb(46,186,238);
         background: linear-gradient(180deg, rgba(255,255,255,1) 60%, rgba(46,186,238,1) 60%);
          */
@@ -59,16 +68,15 @@
     .loren-ipsum {
         margin-top:0px;
         grid-template-columns: 3fr 5fr;
-        padding-bottom: 0px;
+        padding-bottom: 110px;
     }
-
 
         /*  */
         .post-slid__item {
-            margin-top:50px;
+            margin-top:0px;
         }
         .post-img{
-
+            height:315px;
         }
 
         .post-info {
@@ -190,6 +198,7 @@ footer .menu{
     padding:10px 0px;
     padding-top:20px;
     margin-left: 0px;
+    
 }
 
 footer .menu-list{
@@ -197,8 +206,11 @@ footer .menu-list{
     font-weight: 400;
     padding:0px 10px;
     font-size: 14px;
+    justify-content: center;
 }
-
+footer .menu-list a{
+    margin-right: 10px;
+}
 .copyright {
     font-size: 14px;
     text-align: center;
@@ -213,6 +225,10 @@ footer .menu-list{
 
 /*  */
 @media (min-width:600px) and (max-width:929px){
+    .loren-ipsum {
+        background-color: #2ebaee;
+    }
+    
     .service{
         background:none;
         /* background: rgb(46,186,238);
@@ -374,8 +390,12 @@ footer .menu-list{
         
     }
 
+    footer .menu-list a{
+        margin-right: 10px;
+    }
     footer .menu-list{
-        margin:0px auto;
+        /* margin:0px auto; */
+        justify-content: center;
        
     }
 
