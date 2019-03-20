@@ -1,0 +1,24 @@
+
+
+@media(max-width:1000px){
+
+
+.pages{
+    display:block;
+    
+}
+
+.pages a{
+    display:block;
+    margin: 90px auto;
+    
+}
+
+/* hover */
+.pages a:hover{
+    transform: scale(1.2);
+    background-size: 400px;
+}
+/*  */
+
+}

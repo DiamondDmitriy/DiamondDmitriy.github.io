@@ -1,0 +1,79 @@
+body, html{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+.container{
+    max-width: 1000px;
+    margin:0px auto;
+
+}
+
+header{
+    top:0;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    color:white;
+    height:80px;
+    background-color: rgb(39, 39, 39, 0.9);
+    font-size: 45px;
+    line-height: 80px;
+}
+
+.logo {
+
+    
+}
+
+._gradient{
+    background: rgba(253,219,124,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(253,219,124,1) 0%, rgba(255,237,36,1) 66%, rgba(255,195,31,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(253,219,124,1)), color-stop(66%, rgba(255,237,36,1)), color-stop(100%, rgba(255,195,31,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(253,219,124,1) 0%, rgba(255,237,36,1) 66%, rgba(255,195,31,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(253,219,124,1) 0%, rgba(255,237,36,1) 66%, rgba(255,195,31,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(253,219,124,1) 0%, rgba(255,237,36,1) 66%, rgba(255,195,31,1) 100%);
+background: radial-gradient(ellipse at center, rgba(253,219,124,1) 0%, rgba(255,237,36,1) 66%, rgba(255,195,31,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fddb7c', endColorstr='#ffc31f', GradientType=1 );
+}
+
+/* pages */
+
+.pages-section p{
+    font-size: 35px;
+    text-align: center;
+    margin:40px 0px;
+    margin-top:100px;
+    font-weight: bold;
+}
+
+.pages{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.pages a{
+
+    border:5px solid black;
+    border-radius: 50%;
+    width: 300px;
+    height:300px;
+}
+
+
+.pages a:nth-child(1){
+    background: url('../img/page1.png') 50% 50% no-repeat;
+    background-size: 650px;
+}
+.pages a:nth-child(2){
+    background: url('../img/page2.png') 50% 50% no-repeat;
+    background-size: 650px;
+} 
+
+/* hover */
+.pages a:hover{
+    transform: scale(1.4);
+    background-size: 500px;
+}
+/*  */

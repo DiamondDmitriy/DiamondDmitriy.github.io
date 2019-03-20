@@ -237,7 +237,7 @@ ul li:nth-child(8){
 .ladder li:nth-child(5)::before{
     width: 20px;
     height:20px;
-    left:50%;
+    
 }
 
 
