@@ -6,6 +6,7 @@ ul{
 }
 
 body,html{
+    min-width: 320px;
     font-family: 'Montserrat', sans-serif;
     
 }
@@ -448,7 +449,7 @@ footer .menu-list{
     padding:0px;
     list-style-type: none;
     display: flex;
-    width:360px; 
+    max-width:360px; 
     display: flex;
     justify-content: space-between;
     font-weight: bold;

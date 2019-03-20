@@ -10,8 +10,9 @@
     }
 
     .service-list{
+        justify-content: space-around;
         grid-row-gap: 80px;
-        grid-template-columns:250px 250px;
+        grid-template-columns:250px;
         grid-template-areas:"item1"
                             "item2"
                             "item3"
@@ -28,10 +29,190 @@
 
 
 
+    /*  */
+
+    .serv__item{
+        text-align: center;
+    }
+    .serv__item img{
+        margin:0px auto;
+    }
+
+    .serv-layout {
+        margin-bottom: 50px;
+    }
+
+    .serv-loren-psum .block-serv{
+        padding-left: 20px;
+
+    }
+
+    .loren-ipsum .img-serv{
+        margin-left: 20px;
+    }
+
+
+    .serv-loren-psum{
+        grid-template-columns: 5fr 3fr; 
+    }
+
+    .loren-ipsum {
+        margin-top:0px;
+        grid-template-columns: 3fr 5fr;
+        padding-bottom: 0px;
+    }
+
+
+        /*  */
+        .post-slid__item {
+            margin-top:50px;
+        }
+        .post-img{
+
+        }
+
+        .post-info {
+            margin-left: 10px;
+        }
+        .post-info h3 {
+            font-size:40px;
+            margin-bottom: 10px;
+        }
+        .post-info p {
+            margin-bottom: 20px;
+        }
+        
+        .post-list{
+            margin-top: 60px;
+        }
+        
+        .post-list a{
+            margin:0px auto;
+            height:300px;
+            width:90%;
+            position: relative;
+        }
+    
+        .post__item p{
+            font-size: 35px;
+            font-weight: bold;
+            color:#FFF;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%)
+        }
+
+            /* team */
+    .team {
+        margin-bottom: 20px;
+    }
+    .team h2{
+        
+        text-align: center;
+    }
+    .team-list{
+        display:grid;
+        grid-template-areas: "block1" "block2" 
+                             "block3" "block4";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 314px;
+    
+    }
+
+    
+/* contact */
+.contact-us div._flex{
+    display: block;
+}
+
+.contact-info{
+    display: block;
+    margin:0px auto;
+    text-align: center;
+}
+.contact-info h2{
+    
+    font-size: 25px;
+    padding:0px;
+    margin:0px;
+    padding-top:5px;
+}
+.socials{
+    margin:0px auto;
+}
+.social-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 0px;
+    
+}
+.contact-form {
+    padding-bottom: 10px;
+    width:240px;
+    margin:0px auto;
+    margin-top: 20px;
+}
+
+input{
+    padding:5px;
+}
+
+#message {
+    height:75px;
+    margin-bottom: 5px;
+}
+.social__item{
+    margin:10px 0px;
+    margin-right: 0px;
+}
+.social__item:not(:nth-child(5)) {
+    margin-right: 0px;
+}
+
+.contact-info .p_adres {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+.contact-info p{
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+/* footer */
+footer .container{
+    display:block;
+    padding:0px 0px;
 
 }
+
+footer .menu{
+    
+    padding:10px 0px;
+    padding-top:20px;
+    margin-left: 0px;
+}
+
+footer .menu-list{
+    margin:10px auto;
+    font-weight: 400;
+    padding:0px 10px;
+    font-size: 14px;
+}
+
+.copyright {
+    font-size: 14px;
+    text-align: center;
+    margin:0px 10px;;
+    padding-bottom: 20px;
+        
+}
+
+
+}
+
+
 /*  */
-@media (min-width:600px) and (max-width:899px){
+@media (min-width:600px) and (max-width:929px){
     .service{
         background:none;
         /* background: rgb(46,186,238);
@@ -81,6 +262,7 @@
         padding-bottom: 0px;
     }
 
+    /*  */
 
     .post-info {
         margin-left: 20px;
@@ -131,15 +313,18 @@
         display: block;
         margin:0px auto;
         text-align: center;
+        padding-bottom: 10px;
     }
     .contact-info h2{
         
         font-size: 35px;
         padding:0px;
         margin:0px;
+        padding-top:5px;
     }
     .socials{
         margin:0px auto;
+        margin-bottom: 20px;
     }
     .social-list{
         padding: 0px;
@@ -155,14 +340,56 @@
     }
 
     #message {
-        height:80px;
+        height:75px;
+        margin-bottom: 5px;
+    }
+    .social__item{
+        margin:5px auto;
+    }
+
+    .contact-info .p_adres {
+        margin-top:5px;
+        margin-bottom: 5px;
+    }
+    .contact-info p{
+        margin-bottom: 5px;
+        font-size: 14px;
+    }
+    form button{
+        
+    }
+
+    /* footer */
+    footer .container{
+        display:block;
+        padding:0px 0px;
+
+    }
+
+    footer .menu{
+        
+        padding:10px 0px;
+        padding-top:20px;
+        margin-left: 0px;
+        
+    }
+
+    footer .menu-list{
+        margin:0px auto;
+       
+    }
+
+    .copyright {
+        text-align: center;
+        margin:0px auto;
+        padding-bottom: 20px;
     }
 }
 
 
 
 
-@media (min-width:900px)  and (max-width: 1199px)  {
+@media (min-width:929px)  and (max-width: 1199px)  {
 
     .contact-form {
         margin:0px auto;
