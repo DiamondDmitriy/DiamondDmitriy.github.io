@@ -82,7 +82,7 @@ header::after{
     margin-top:40px;
     text-align: center;
     font-size: 30px;
-    width: 600px;
+    max-width: 600px;
     
     
 }
@@ -115,7 +115,7 @@ header::after{
 /*  */
 /* pages */
 .container{
-    width:1400px;
+    max-width:1400px;
     margin:0px auto;
 }
 
@@ -133,12 +133,14 @@ header::after{
     display: flex;
     justify-content: space-around;
     padding-bottom: 200px;
+    flex-wrap: wrap;
 }
 
 .pages a{
+    margin:50px 50px;
     border:1px solid brown;
     border-radius: 0%;
-    width:500px;
+    width: 500px;
     height:300px;
     position: relative;
 
