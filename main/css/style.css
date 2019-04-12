@@ -2,8 +2,9 @@ body, html{
     font-family: 'Roboto', sans-serif;
 }
    
-a{
-    outline: none;
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
 }
 /* header */
 header{
