@@ -32,6 +32,7 @@ header::after{
     text-decoration: none;
     color:black;
     margin-left: 40px;
+    font-weight: bold;
 }
 
 .menu_right{
@@ -39,6 +40,7 @@ header::after{
     display: flex;
     justify-content: flex-end;
     margin-right: 40px;
+    font-weight: bold;
 
 }
 
@@ -47,6 +49,7 @@ header::after{
     justify-content: space-around;
     width: 350px;
     list-style: none;
+    font-size: 16px;
     
 }
 .menu__item a{
