@@ -2,7 +2,7 @@ body, html{
     font-family: 'Roboto', sans-serif;
 }
    
-:active, :hover, :focus {
+a:active,a:hover,a:focus {
     outline: 0;
     outline-offset: 0;
 }
