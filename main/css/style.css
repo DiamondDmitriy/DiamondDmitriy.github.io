@@ -179,7 +179,33 @@ header::after{
 
 
 
+/* worrning */
+
+.worrning{
+    padding: 0px 10px;
+    padding-top:100px;
+    padding-bottom: 150px;
+    background:url(https://static.npm.red/attachments/cjsdqox9k0kgel1beo12x4x6e-line-final.full.png),radial-gradient(farthest-corner ellipse,#580F0b 22%,#120707 100%);
+    height:100px;
+    color:#f1c131;
+    font-size: 20px;
+}
+
+.worrning h3{
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+
+/*  */
+
+
+
 /* footer */
 .text_center{
     text-align: center;
+}
+
+.copyright{
+    padding: 40px 0px;
 }
