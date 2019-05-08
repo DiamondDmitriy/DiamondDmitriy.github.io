@@ -1,0 +1,29 @@
+ #code{ 
+    width: 100%;
+    float:left;
+    min-height:100px;
+    overflow: hidden;
+    /* border:2px solid red; */
+}
+
+#outCode{ 
+    width: 100%;
+    float:left;
+    min-height:100px;
+    overflow: hidden;
+    /* border:2px solid red; */
+}
+
+#run_btn{
+    margin:20px 0px;
+    border:1px solid rgb(14, 189, 87);
+    color:white;
+    font-size: 18px;
+    background-color: rgb(84, 219, 140);
+    width: 150px;
+    height:40px;
+    box-shadow: 2px 2px 5px 0px black;
+}
+#run_btn:hover{
+    
+}

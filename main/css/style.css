@@ -1,3 +1,99 @@
+
+/* menu */
+
+ 
+.menu__icon {
+    display: none;
+    width: 45px;
+    height: 35px;
+    position: relative;
+    cursor: pointer;
+}
+
+.menu__icon span {
+    display: block;
+    position: absolute;
+    height: 6px;
+    width: 100%;
+    background: #333333;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+
+.menu__icon span:nth-child(1) {
+    top: 0px;
+}
+
+.menu__icon span:nth-child(2), .menu__icon span:nth-child(3) {
+    top: 13px;
+}
+
+.menu__icon span:nth-child(4) {
+    top: 26px;
+}
+
+
+
+
+
+.menu_nav.menu_state_open .menu__icon span:nth-child(1) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu_nav.menu_state_open .menu__icon span:nth-child(2) {
+    transform: rotate(45deg);
+}
+
+.menu_nav.menu_state_open .menu__icon span:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+.menu_nav.menu_state_open .menu__icon span:nth-child(4) {
+    top: 18px;
+    width: 0%;
+    left: 50%;
+}
+
+.menu_nav.menu_state_open .menu {
+    display: block;  
+}
+ 
+
+
+/* 
+.menu_nav {
+    /* text-align: right; */
+    /* 
+}
+ 
+.menu__item {
+    display: inline-block;
+    color: #333333;
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.menu__item:hover {
+    text-decoration: underline;
+} 
+
+ */
+
+
+/*  */
+
+
+
+
+
 body, html{
     font-family: 'Roboto', sans-serif;
 }
